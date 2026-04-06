@@ -1,0 +1,12 @@
+{
+  "name": "copilot-concepts-demo",
+  "version": "1.0.0",
+  "description": "Demo app showing the difference between GitHub Copilot Agents, Skills, and Instructions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["copilot", "agents", "skills", "instructions", "demo"],
+  "author": "",
+  "license": "MIT"
+}
