@@ -1,0 +1,19 @@
+{
+  "name": "copilot-concepts-demo",
+  "version": "1.0.0",
+  "description": "Demo app showing the difference between Agents, Skills, and Instructions in a GitHub Copilot-like workflow.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "copilot",
+    "agents",
+    "skills",
+    "instructions",
+    "demo"
+  ],
+  "author": "",
+  "license": "MIT"
+}
