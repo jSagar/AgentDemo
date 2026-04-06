@@ -14,19 +14,25 @@
  * in the right order and combining their outputs.
  */
 
-// Priority scores for each urgency level (higher = more urgent)
+// Priority scores for each urgency level (higher = more urgent).
+// Urgency levels are spaced 30 points apart so that urgency is STRICTLY
+// dominant over impact: no impact advantage (max 20 pts) can ever outweigh
+// even a single step up in urgency. This enforces the documented rule:
+// "Prioritize tasks by urgency first, then by impact."
 const URGENCY_SCORE = {
-  critical: 40,
-  high: 30,
-  medium: 20,
-  low: 10,
+  critical: 90,
+  high: 60,
+  medium: 30,
+  low: 0,
 };
 
-// Impact scores (higher = more valuable to the team)
+// Impact scores break ties within the same urgency level.
+// Max impact advantage (20 pts) is intentionally less than the minimum
+// urgency gap (30 pts), ensuring urgency always ranks above impact.
 const IMPACT_SCORE = {
-  high: 30,
-  medium: 20,
-  low: 10,
+  high: 20,
+  medium: 10,
+  low: 0,
 };
 
 // Status penalties — blocked tasks get a lower effective priority
